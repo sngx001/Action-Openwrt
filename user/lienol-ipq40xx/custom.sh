@@ -12,7 +12,7 @@ sed -i "s/https/$version/g"  package/default-settings/files/zzz-default-settings
 sed -i  's/http/releases\\\/19.07\-SNAPSHOT/g'  package/default-settings/files/zzz-default-settings
 
 git clone https://github.com/fw876/helloworld.git  package/ssr
-git clone https://$SUPER_TOKEN@github.com/hyird/passwall.git    package/passwall
+git clone https://github.com/hyird/passwall.git    package/passwall
 svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2   package/redsocks2
 svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/tcpping     package/tcpping
 svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/microsocks  package/microsocks
