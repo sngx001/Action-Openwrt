@@ -12,3 +12,4 @@ sed -i  "s/R20\(.[0-9].[0-9]\{1,2\}\)/R20.$version/g" package/lean/default-setti
 git clone https://github.com/hyird/passwall.git                     package/passwall
 git clone https://github.com/Mrbai98/luci-theme-atmaterial.git      package/luci-theme-atmaterial
 svn checkout https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome package/adg
+git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/luci-theme-infinityfreedom
