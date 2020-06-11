@@ -321,6 +321,8 @@ CONFIG_MODULE_DEFAULT_ipq-wifi-p2w_r619ac=y
 CONFIG_MODULE_DEFAULT_ipq-wifi-qxwlan_e2600ac=y
 CONFIG_DEFAULT_iptables=y
 CONFIG_MODULE_DEFAULT_iptables=y
+CONFIG_DEFAULT_ipv6helper=y
+CONFIG_MODULE_DEFAULT_ipv6helper=y
 CONFIG_DEFAULT_kmod-ath10k-ct=y
 CONFIG_MODULE_DEFAULT_kmod-ath10k-ct=y
 CONFIG_MODULE_DEFAULT_kmod-ath10k-ct-smallbuffers=y
@@ -2903,7 +2905,6 @@ CONFIG_PACKAGE_kmod-mt76x0u=m
 CONFIG_PACKAGE_kmod-mt76x2=m
 CONFIG_PACKAGE_kmod-mt76x2-common=m
 CONFIG_PACKAGE_kmod-mt76x2u=m
-# CONFIG_PACKAGE_kmod-mt_wifi is not set
 CONFIG_PACKAGE_kmod-mwifiex-pcie=m
 CONFIG_PACKAGE_kmod-mwifiex-sdio=m
 CONFIG_PACKAGE_kmod-mwl8k=m
@@ -2950,7 +2951,6 @@ CONFIG_PACKAGE_kmod-wl12xx=m
 CONFIG_PACKAGE_kmod-wl18xx=m
 CONFIG_PACKAGE_kmod-wlcore=m
 CONFIG_PACKAGE_kmod-zd1211rw=m
-# CONFIG_PACKAGE_wifi-l1profile is not set
 
 #
 # Languages
@@ -5342,7 +5342,7 @@ CONFIG_PACKAGE_libvorbis=m
 # CONFIG_PACKAGE_libvpx is not set
 # CONFIG_PACKAGE_libwangle is not set
 # CONFIG_PACKAGE_libwebcam is not set
-# CONFIG_PACKAGE_libwebsockets-full is not set
+CONFIG_PACKAGE_libwebsockets-full=m
 # CONFIG_PACKAGE_libwebsockets-mbedtls is not set
 # CONFIG_PACKAGE_libwebsockets-openssl is not set
 CONFIG_PACKAGE_libwrap=m
@@ -5499,6 +5499,8 @@ CONFIG_PACKAGE_luci-app-diskman_INCLUDE_kmod_md_linear=y
 CONFIG_PACKAGE_luci-app-dnscrypt-proxy=m
 CONFIG_PACKAGE_luci-app-dnsforwarder=m
 CONFIG_PACKAGE_luci-app-dockerman=m
+CONFIG_PACKAGE_luci-app-dockerman_INCLUDE_docker_ce=y
+CONFIG_PACKAGE_luci-app-dockerman_INCLUDE_ttyd=y
 CONFIG_PACKAGE_luci-app-dump1090=m
 CONFIG_PACKAGE_luci-app-dynapoint=m
 CONFIG_PACKAGE_luci-app-e2guardian=m
@@ -5524,7 +5526,6 @@ CONFIG_PACKAGE_luci-app-lxc=m
 CONFIG_PACKAGE_luci-app-meshwizard=m
 CONFIG_PACKAGE_luci-app-minidlna=m
 CONFIG_PACKAGE_luci-app-mjpg-streamer=m
-# CONFIG_PACKAGE_luci-app-mtwifi is not set
 CONFIG_PACKAGE_luci-app-mwan3=m
 CONFIG_PACKAGE_luci-app-mwan3helper=m
 CONFIG_PACKAGE_luci-app-netdata=m
@@ -5551,8 +5552,6 @@ CONFIG_PACKAGE_luci-app-passwall=m
 CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ipt2socks=y
 # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks is not set
 CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR=y
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_socks is not set
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_socks=y
 # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray is not set
 # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan is not set
 # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Brook is not set
@@ -5595,6 +5594,7 @@ CONFIG_PACKAGE_luci-app-ssr-plus=m
 CONFIG_PACKAGE_luci-app-statistics=m
 CONFIG_PACKAGE_luci-app-syncdial=m
 CONFIG_PACKAGE_luci-app-syncthing=m
+CONFIG_PACKAGE_luci-app-tcpdump=m
 CONFIG_PACKAGE_luci-app-timecontrol=m
 CONFIG_PACKAGE_luci-app-tinyproxy=m
 CONFIG_PACKAGE_luci-app-transmission=m
@@ -5864,7 +5864,6 @@ CONFIG_PACKAGE_luci-i18n-diag-core-zh-cn=m
 # CONFIG_PACKAGE_luci-i18n-dnscrypt-proxy-ja is not set
 # CONFIG_PACKAGE_luci-i18n-dnscrypt-proxy-ru is not set
 CONFIG_PACKAGE_luci-i18n-dnsforwarder-zh-cn=m
-CONFIG_PACKAGE_luci-i18n-dockerman-zh-cn=m
 # CONFIG_PACKAGE_luci-i18n-dynapoint-de is not set
 # CONFIG_PACKAGE_luci-i18n-dynapoint-ja is not set
 # CONFIG_PACKAGE_luci-i18n-dynapoint-pt-br is not set
@@ -5948,6 +5947,7 @@ CONFIG_PACKAGE_luci-i18n-freifunk-policyrouting-zh-cn=m
 # CONFIG_PACKAGE_luci-i18n-freifunk-vi is not set
 CONFIG_PACKAGE_luci-i18n-freifunk-zh-cn=m
 # CONFIG_PACKAGE_luci-i18n-freifunk-zh-tw is not set
+CONFIG_PACKAGE_luci-i18n-frpc-zh-cn=m
 CONFIG_PACKAGE_luci-i18n-frps-zh-cn=m
 # CONFIG_PACKAGE_luci-i18n-fwknopd-en is not set
 # CONFIG_PACKAGE_luci-i18n-fwknopd-pt-br is not set
@@ -6042,8 +6042,8 @@ CONFIG_PACKAGE_luci-i18n-mwan3-zh-cn=m
 # CONFIG_PACKAGE_luci-i18n-mwan3-zh-tw is not set
 CONFIG_PACKAGE_luci-i18n-mwan3helper-zh-cn=m
 CONFIG_PACKAGE_luci-i18n-netdata-zh-cn=m
-# CONFIG_PACKAGE_luci-i18n-netkeeper-interception-zh_Hans is not set
-# CONFIG_PACKAGE_luci-i18n-netkeeper-zh_Hans is not set
+CONFIG_PACKAGE_luci-i18n-netkeeper-interception-zh-cn=m
+CONFIG_PACKAGE_luci-i18n-netkeeper-zh-cn=m
 CONFIG_PACKAGE_luci-i18n-nfs-zh-cn=m
 # CONFIG_PACKAGE_luci-i18n-nlbwmon-ja is not set
 # CONFIG_PACKAGE_luci-i18n-nlbwmon-ru is not set
@@ -6306,6 +6306,7 @@ CONFIG_PACKAGE_luci-i18n-ssr-plus-zh-cn=m
 CONFIG_PACKAGE_luci-i18n-statistics-zh-cn=m
 # CONFIG_PACKAGE_luci-i18n-statistics-zh-tw is not set
 CONFIG_PACKAGE_luci-i18n-syncthing-zh-cn=m
+CONFIG_PACKAGE_luci-i18n-tcpdump-zh-cn=m
 CONFIG_PACKAGE_luci-i18n-timecontrol-zh-cn=m
 # CONFIG_PACKAGE_luci-i18n-tinyproxy-ca is not set
 # CONFIG_PACKAGE_luci-i18n-tinyproxy-cs is not set
@@ -6589,9 +6590,11 @@ CONFIG_PACKAGE_qBittorrent=m
 # CONFIG_PACKAGE_transmission-cli-mbedtls is not set
 # CONFIG_PACKAGE_transmission-cli-openssl is not set
 # CONFIG_PACKAGE_transmission-daemon-mbedtls is not set
-# CONFIG_PACKAGE_transmission-daemon-openssl is not set
+CONFIG_PACKAGE_transmission-daemon-openssl=m
 # CONFIG_PACKAGE_transmission-remote-mbedtls is not set
 # CONFIG_PACKAGE_transmission-remote-openssl is not set
+# CONFIG_PACKAGE_transmission-web is not set
+CONFIG_PACKAGE_transmission-web-control=m
 
 #
 # Captive Portals
@@ -7796,7 +7799,7 @@ CONFIG_PACKAGE_socat=m
 # CONFIG_PACKAGE_tac_plus is not set
 # CONFIG_PACKAGE_tac_plus-pam is not set
 # CONFIG_PACKAGE_tayga is not set
-# CONFIG_PACKAGE_tcpdump is not set
+CONFIG_PACKAGE_tcpdump=m
 # CONFIG_PACKAGE_tcpdump-mini is not set
 CONFIG_PACKAGE_tcping=m
 CONFIG_PACKAGE_tcpping=m
@@ -8089,7 +8092,7 @@ CONFIG_PACKAGE_bash=m
 # CONFIG_PACKAGE_setterm is not set
 # CONFIG_PACKAGE_tio is not set
 # CONFIG_PACKAGE_tmux is not set
-# CONFIG_PACKAGE_ttyd is not set
+CONFIG_PACKAGE_ttyd=m
 # CONFIG_PACKAGE_wall is not set
 
 #
@@ -8201,6 +8204,7 @@ CONFIG_PACKAGE_collectd-mod-network=m
 CONFIG_PACKAGE_collectd-mod-rrdtool=m
 # CONFIG_PACKAGE_collectd-mod-sensors is not set
 # CONFIG_PACKAGE_collectd-mod-snmp is not set
+# CONFIG_PACKAGE_collectd-mod-sqm is not set
 # CONFIG_PACKAGE_collectd-mod-syslog is not set
 # CONFIG_PACKAGE_collectd-mod-table is not set
 # CONFIG_PACKAGE_collectd-mod-tail is not set
