@@ -17,4 +17,4 @@ git clone https://github.com/CCnut/feed-netkeeper.git -b openwrt-18.06 package/n
 svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2   package/redsocks2
 svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/tcpping     package/tcpping
 svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/microsocks  package/microsocks
-
+git clone https://github.com/project-openwrt/openwrt-gowebdav.git package/webdav
