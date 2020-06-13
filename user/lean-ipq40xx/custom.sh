@@ -15,3 +15,4 @@ git clone https://github.com/Mrbai98/luci-theme-atmaterial.git      package/luci
 svn checkout https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome package/adg
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/luci-theme-infinityfreedom
 git clone https://github.com/project-openwrt/openwrt-gowebdav.git package/webdav
+svn checkout https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/rtl8821cu package/rtl8821cu
