@@ -16,5 +16,5 @@ svn checkout https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguar
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/luci-theme-infinityfreedom
 git clone https://github.com/project-openwrt/openwrt-gowebdav.git package/webdav
 
-echo "CONFIG_SFC_MCDI_MON=n" >target/linux/x86/config-4.19
-echo "CONFIG_HSA_AMD=n" >target/linux/x86/config-4.19
+#echo "CONFIG_SFC_MCDI_MON=n" >target/linux/x86/config-4.19
+#echo "CONFIG_HSA_AMD=n" >target/linux/x86/config-4.19
