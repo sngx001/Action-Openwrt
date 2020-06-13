@@ -2725,6 +2725,10 @@ CONFIG_PACKAGE_kmod-mt76x2=m
 CONFIG_PACKAGE_kmod-mt76x2-common=m
 CONFIG_PACKAGE_kmod-mt76x2u=m
 # CONFIG_PACKAGE_kmod-mt_wifi is not set
+# CONFIG_MTK_FIRST_IF_MT7615E is not set
+# CONFIG_MTK_FIRST_IF_MT7622 is not set
+# CONFIG_MTK_FIRST_IF_MT7626 is not set
+# CONFIG_MTK_FIRST_IF_NONE is not set
 CONFIG_PACKAGE_kmod-mwifiex-pcie=m
 CONFIG_PACKAGE_kmod-mwifiex-sdio=m
 CONFIG_PACKAGE_kmod-mwl8k=m
@@ -2761,6 +2765,7 @@ CONFIG_PACKAGE_kmod-rtl8192de=m
 CONFIG_PACKAGE_kmod-rtl8192se=m
 CONFIG_PACKAGE_kmod-rtl8812au-ct=m
 CONFIG_PACKAGE_kmod-rtl8821ae=m
+CONFIG_PACKAGE_kmod-rtl8821cu=m
 CONFIG_PACKAGE_kmod-rtl8xxxu=m
 CONFIG_PACKAGE_kmod-rtlwifi=m
 # CONFIG_PACKAGE_RTLWIFI_DEBUG is not set
@@ -3924,10 +3929,10 @@ CONFIG_PACKAGE_libsqlite3=m
 #
 CONFIG_SQLITE_FTS3=y
 CONFIG_SQLITE_RTREE=y
-# CONFIG_PACKAGE_pgsqlodbc is not set
-# CONFIG_PACKAGE_psqlodbca is not set
-# CONFIG_PACKAGE_psqlodbcw is not set
-# CONFIG_PACKAGE_tdb is not set
+CONFIG_PACKAGE_pgsqlodbc=m
+CONFIG_PACKAGE_psqlodbca=m
+CONFIG_PACKAGE_psqlodbcw=m
+CONFIG_PACKAGE_tdb=m
 CONFIG_PACKAGE_unixodbc=m
 
 #
@@ -4025,7 +4030,7 @@ CONFIG_PACKAGE_confuse=m
 # CONFIG_PACKAGE_fftw3f is not set
 # CONFIG_PACKAGE_getdns is not set
 # CONFIG_PACKAGE_giflib is not set
-CONFIG_PACKAGE_glib2=m
+# CONFIG_PACKAGE_glib2 is not set
 # CONFIG_PACKAGE_glog is not set
 # CONFIG_PACKAGE_hidapi is not set
 # CONFIG_PACKAGE_ibrcommon is not set
@@ -4144,7 +4149,7 @@ CONFIG_PACKAGE_libf2fs=y
 # CONFIG_PACKAGE_libfaad2 is not set
 # CONFIG_PACKAGE_libfastjson is not set
 CONFIG_PACKAGE_libfdisk=y
-CONFIG_PACKAGE_libfdt=m
+# CONFIG_PACKAGE_libfdt is not set
 CONFIG_PACKAGE_libffi=m
 # CONFIG_PACKAGE_libffmpeg-audio-dec is not set
 # CONFIG_PACKAGE_libffmpeg-custom is not set
@@ -4177,7 +4182,7 @@ CONFIG_PACKAGE_libhttp-parser=m
 # CONFIG_PACKAGE_libiconv is not set
 CONFIG_PACKAGE_libiconv-full=m
 CONFIG_PACKAGE_libid3tag=m
-# CONFIG_PACKAGE_libidn is not set
+CONFIG_PACKAGE_libidn=m
 CONFIG_PACKAGE_libidn2=m
 # CONFIG_PACKAGE_libiio is not set
 # CONFIG_PACKAGE_libimobiledevice is not set
@@ -4316,7 +4321,7 @@ CONFIG_LIBSODIUM_MINIMAL=y
 CONFIG_PACKAGE_libsoxr=m
 # CONFIG_PACKAGE_libspeex is not set
 # CONFIG_PACKAGE_libspeexdsp is not set
-CONFIG_PACKAGE_libspice-server=m
+# CONFIG_PACKAGE_libspice-server is not set
 CONFIG_PACKAGE_libss=y
 # CONFIG_PACKAGE_libssh is not set
 # CONFIG_PACKAGE_libssh2 is not set
@@ -4386,7 +4391,7 @@ CONFIG_PACKAGE_mxml=m
 # CONFIG_PACKAGE_oniguruma is not set
 # CONFIG_PACKAGE_opencv is not set
 # CONFIG_PACKAGE_p11-kit is not set
-CONFIG_PACKAGE_pixman=m
+# CONFIG_PACKAGE_pixman is not set
 # CONFIG_PACKAGE_poco is not set
 # CONFIG_PACKAGE_protobuf is not set
 # CONFIG_PACKAGE_protobuf-lite is not set
@@ -4581,6 +4586,7 @@ CONFIG_PACKAGE_luci-app-pppoe-relay=m
 CONFIG_PACKAGE_luci-app-pppoe-server=m
 CONFIG_PACKAGE_luci-app-pptp-vpnserver-manyusers=m
 CONFIG_PACKAGE_luci-app-privoxy=m
+CONFIG_PACKAGE_luci-app-ps3netsrv=m
 CONFIG_PACKAGE_luci-app-qbittorrent=m
 CONFIG_PACKAGE_luci-app-qos=m
 CONFIG_PACKAGE_luci-app-radicale=m
@@ -5222,6 +5228,7 @@ CONFIG_PACKAGE_luci-i18n-pptp-vpnserver-manyusers-zh-cn=m
 # CONFIG_PACKAGE_luci-i18n-privoxy-ru is not set
 # CONFIG_PACKAGE_luci-i18n-privoxy-sv is not set
 CONFIG_PACKAGE_luci-i18n-privoxy-zh-cn=m
+CONFIG_PACKAGE_luci-i18n-ps3netsrv-zh-cn=m
 CONFIG_PACKAGE_luci-i18n-qbittorrent-zh-cn=m
 # CONFIG_PACKAGE_luci-i18n-qos-ca is not set
 # CONFIG_PACKAGE_luci-i18n-qos-cs is not set
@@ -5703,7 +5710,7 @@ CONFIG_PACKAGE_curl=m
 # CONFIG_PACKAGE_gnurl is not set
 CONFIG_PACKAGE_gowebdav=m
 # CONFIG_PACKAGE_lftp is not set
-# CONFIG_PACKAGE_ps3netsrv is not set
+CONFIG_PACKAGE_ps3netsrv=m
 # CONFIG_PACKAGE_rosy-file-server is not set
 # CONFIG_PACKAGE_rsync is not set
 # CONFIG_PACKAGE_rsyncd is not set
@@ -5824,8 +5831,8 @@ CONFIG_PACKAGE_snort=m
 #
 # Firewall Tunnel
 #
-CONFIG_PACKAGE_iodine=m
-CONFIG_PACKAGE_iodined=m
+# CONFIG_PACKAGE_iodine is not set
+# CONFIG_PACKAGE_iodined is not set
 
 #
 # FreeRADIUS (version 3)
@@ -6041,7 +6048,7 @@ CONFIG_V2RAY_EXCLUDE_ASSETS=y
 CONFIG_V2RAY_COMPRESS_UPX=y
 CONFIG_V2RAY_DISABLE_NONE=y
 # CONFIG_V2RAY_DISABLE_CUSTOM is not set
-# CONFIG_PACKAGE_v2ray-plugin is not set
+CONFIG_PACKAGE_v2ray-plugin=m
 # CONFIG_v2ray-plugin_INCLUDE_GOPROXY is not set
 
 #
@@ -6478,13 +6485,13 @@ CONFIG_PACKAGE_privoxy=m
 # CONFIG_PACKAGE_radicale2 is not set
 # CONFIG_PACKAGE_radicale2-examples is not set
 # CONFIG_PACKAGE_radicale2-src is not set
-CONFIG_PACKAGE_shadowsocks-client=m
+# CONFIG_PACKAGE_shadowsocks-client is not set
 CONFIG_PACKAGE_shadowsocks-libev-ss-local=m
 CONFIG_PACKAGE_shadowsocks-libev-ss-redir=m
 CONFIG_PACKAGE_shadowsocks-libev-ss-rules=m
 CONFIG_PACKAGE_shadowsocks-libev-ss-server=m
 CONFIG_PACKAGE_shadowsocks-libev-ss-tunnel=m
-CONFIG_PACKAGE_shadowsocksr-libev=m
+# CONFIG_PACKAGE_shadowsocksr-libev is not set
 CONFIG_PACKAGE_shadowsocksr-libev-alt=m
 CONFIG_PACKAGE_shadowsocksr-libev-server=m
 CONFIG_PACKAGE_shadowsocksr-libev-ssr-local=m
@@ -6983,7 +6990,7 @@ CONFIG_PACKAGE_partx-utils=y
 # Editors
 #
 # CONFIG_PACKAGE_joe is not set
-# CONFIG_PACKAGE_nano is not set
+CONFIG_PACKAGE_nano=m
 # CONFIG_PACKAGE_vim is not set
 # CONFIG_PACKAGE_vim-full is not set
 # CONFIG_PACKAGE_vim-fuller is not set
@@ -7103,23 +7110,18 @@ CONFIG_PACKAGE_ttyd=m
 #
 # Virtualization
 #
-CONFIG_PACKAGE_qemu-arm-softmmu=m
-CONFIG_PACKAGE_qemu-bridge-helper=m
-CONFIG_PACKAGE_qemu-firmware-efi=m
-CONFIG_PACKAGE_qemu-firmware-pxe=m
-CONFIG_PACKAGE_qemu-firmware-seabios=m
-CONFIG_PACKAGE_qemu-firmware-seavgabios=m
-CONFIG_PACKAGE_qemu-ga=m
-CONFIG_PACKAGE_qemu-img=m
-CONFIG_PACKAGE_qemu-keymaps=m
-CONFIG_PACKAGE_qemu-nbd=m
-CONFIG_PACKAGE_qemu-x86_64-softmmu=m
-CONFIG_QEMU_UI_VNC=y
-CONFIG_QEMU_UI_VNC_JPEG=y
-CONFIG_QEMU_UI_VNC_PNG=y
-CONFIG_QEMU_UI_VNC_SASL=y
-CONFIG_QEMU_UI_SPICE=y
-CONFIG_PACKAGE_virtio-console-helper=m
+# CONFIG_PACKAGE_qemu-arm-softmmu is not set
+# CONFIG_PACKAGE_qemu-bridge-helper is not set
+# CONFIG_PACKAGE_qemu-firmware-efi is not set
+# CONFIG_PACKAGE_qemu-firmware-pxe is not set
+# CONFIG_PACKAGE_qemu-firmware-seabios is not set
+# CONFIG_PACKAGE_qemu-firmware-seavgabios is not set
+# CONFIG_PACKAGE_qemu-ga is not set
+# CONFIG_PACKAGE_qemu-img is not set
+# CONFIG_PACKAGE_qemu-keymaps is not set
+# CONFIG_PACKAGE_qemu-nbd is not set
+# CONFIG_PACKAGE_qemu-x86_64-softmmu is not set
+# CONFIG_PACKAGE_virtio-console-helper is not set
 
 #
 # Zoneinfo
