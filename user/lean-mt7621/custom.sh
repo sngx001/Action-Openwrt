@@ -4,7 +4,7 @@ echo "Test custom.sh"
 
 source ../version
 sed -i '/shadow/d'                     package/lean/default-settings/files/zzz-default-settings
-sed -i '/nas/d'                     package/lean/default-settings/files/zzz-default-settings
+sed -i '/services/d'                     package/lean/default-settings/files/zzz-default-settings
 sed -i "s/openwrt.proxy.ustclug.org/op.hyird.xyz/g"  package/lean/default-settings/files/zzz-default-settings
 sed -i "s/https:/R20.0.0/g"  package/lean/default-settings/files/zzz-default-settings
 sed -i  's/http:/snapshots/g'  package/lean/default-settings/files/zzz-default-settings
