@@ -125,8 +125,8 @@ jobs:
       id: compile
       run: |
         cd openwrt
-        echo -e "2 thread compile"
-        make -j2 || make -j1 V=s
+        echo -e "3 thread compile"
+        make -j3 || make -j1 V=s
         echo "::set-output name=status::success"
         
     - name:  Pack packages_dir
