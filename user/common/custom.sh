@@ -15,7 +15,6 @@ echo "sed -i \"s/19.07-SNAPSHOT/L20.$version/g\" /etc/openwrt_release " >>     p
 echo "exit 0" >>                                                               package/default-settings/files/zzz-default-settings
 
 git clone https://github.com/fw876/helloworld.git                                                        package/ssr
-git clone https://github.com/hyird/pw.git -b master                                                      package/passwall
 git clone https://github.com/CCnut/feed-netkeeper.git -b openwrt-18.06                                   package/nk
 svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2    			                 package/redsocks2
 svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/tcpping                             package/tcpping
