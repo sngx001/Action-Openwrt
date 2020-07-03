@@ -25,7 +25,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [x64,ipq40xx]
+        target: [x64,ipq40xx,mt7621]
     
     steps:
     - name: Checkout
