@@ -34,5 +34,6 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ps3netsrv        
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/rclone-ng                                 package/rclone-ng 
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/rclone-webui-react                        package/rclone-webui-react
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/rclone                                    package/rclone
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-rclone                           package/luci-app-rclone 
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-rclone                           package/luci-app-rclone
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/wol                                       package/wol
 
