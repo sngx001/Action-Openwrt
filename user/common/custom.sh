@@ -4,7 +4,7 @@ echo "Apply custom.sh"
 
 source ../version
 
-sed -i '28d'                                                                   package/system/opkg/Makefile
+sed -i '92d'                                                                   package/system/opkg/Makefile
 sed -i '/lienol/d'                                                             package/default-settings/files/zzz-default-settings
 sed -i '/shadow/d'                                                             package/default-settings/files/zzz-default-settings
 sed -i "s/#sed/sed/g"                                                          package/default-settings/files/zzz-default-settings
