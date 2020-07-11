@@ -15,6 +15,8 @@ sed -i '/exit/d'                                                               p
 echo "sed -i \"s/19.07-SNAPSHOT/L20.$version/g\" /etc/openwrt_release " >>     package/default-settings/files/zzz-default-settings
 echo "exit 0" >>                                                               package/default-settings/files/zzz-default-settings
 
+rm -rf ./feeds/luci/applications/luci-app-sqm/
+
 git clone https://github.com/fw876/helloworld.git                                                        package/ssr
 git clone https://github.com/CCnut/feed-netkeeper.git -b openwrt-18.06                                   package/nk
 svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2    			                 package/redsocks2
@@ -36,4 +38,5 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/rclone-webui-reac
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/rclone                                    package/rclone
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-rclone                           package/luci-app-rclone
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/wol                                       package/wol
+
 
