@@ -16,6 +16,7 @@ echo "sed -i \"s/19.07-SNAPSHOT/L20.$version/g\" /etc/openwrt_release " >>     p
 echo "exit 0" >>                                                               package/default-settings/files/zzz-default-settings
 
 rm -rf ./feeds/luci/applications/luci-app-sqm/
+sed -i 's/nas/services/g' ./feeds/luci/applications/luci-app-aria2/luasrc/view/aria2/overview_status.htm
 
 git clone https://github.com/fw876/helloworld.git                                                        package/ssr
 git clone https://github.com/CCnut/feed-netkeeper.git -b openwrt-18.06                                   package/nk
