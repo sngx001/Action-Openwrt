@@ -30,8 +30,7 @@ git clone https://github.com/yangsongli/luci-theme-atmaterial.git               
 
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ttyd				                     package/luci-app-ttyd
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-airplay2                         package/luci-app-airplay2
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-familycloud                      package/luci-app-familycloud               
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-music-remote-center              package/luci-app-music-remote-center		     
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-familycloud                      package/luci-app-familycloud                 
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ps3netsrv                        package/luci-app-ps3netsrv
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ps3netsrv                                 package/ps3netsrv 
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/rclone-ng                                 package/rclone-ng 
