@@ -28,7 +28,6 @@ git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git    
 git clone https://github.com/yangsongli/luci-theme-atmaterial.git                                        package/luci-theme-atmaterial                          
 
 
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ttyd				                     package/luci-app-ttyd
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-airplay2                         package/luci-app-airplay2
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-familycloud                      package/luci-app-familycloud                 
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ps3netsrv                        package/luci-app-ps3netsrv
