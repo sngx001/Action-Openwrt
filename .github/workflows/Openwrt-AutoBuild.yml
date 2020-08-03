@@ -9,7 +9,7 @@ on:
     paths:
       - 'start'
   schedule:
-    - cron: 0 0 */7 * *
+    - cron: 0 20 */1 * *
   watch:
     types: [started]
 
