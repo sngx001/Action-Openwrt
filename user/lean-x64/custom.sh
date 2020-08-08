@@ -10,6 +10,7 @@ sed -i "s/openwrt.proxy.ustclug.org/openwrt.download/g"  package/lean/default-se
 sed -i "s/https:/R20.0.0/g"  package/lean/default-settings/files/zzz-default-settings
 sed -i  's/http:/snapshots/g'  package/lean/default-settings/files/zzz-default-settings
 sed -i  "s/R20\(.[0-9].[0-9]\{1,2\}\)/R20.$version/g" package/lean/default-settings/files/zzz-default-settings
+sed 's/DEPENDS.*/& \+luci-i18n-samba-zh-cn/g'  package/lean/autosamba/Makefile
 
 rm -rf package/lean/luci-theme-argon
 git clone https://github.com/CCnut/feed-netkeeper.git -b openwrt-18.06                                   package/nk
