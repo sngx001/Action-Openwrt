@@ -26,4 +26,3 @@ git clone https://github.com/tty228/luci-app-serverchan.git                     
 git clone https://github.com/vernesong/OpenClash.git -b master                                           package/luci-app-openclash
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome                          package/adg
 svn co https://github.com/Lienol/openwrt-luci/trunk/applications/luci-app-smartdns                       package/luci-app-smartdns
-svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash                                   package/luci-app-openclash   
