@@ -25,7 +25,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [lean-x64,lean-ipq40xx]
+        target: [lean-x64]
     
     steps:
     - name: Checkout
@@ -87,7 +87,8 @@ jobs:
       run: cd openwrt && ./scripts/feeds install -a
 
     - name: Load custom configuration
-      run: |        
+      run: |
+         cd openwrt && mv ../user/${{matrix.target}}/config.diff .config && cd ..        
          echo "Apply files..."
          if [ -n "$(ls -A "user/common/files" 2>/dev/null)" ]; then
          cp -r -f user/common/files/* openwrt/package/base-files/files/
@@ -114,7 +115,6 @@ jobs:
       id: package
       run: |
         cd openwrt
-        mv ../user/${{matrix.target}}/config.diff .config
         make defconfig
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
