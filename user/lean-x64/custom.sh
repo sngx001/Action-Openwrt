@@ -20,5 +20,10 @@ git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git    
 git clone https://github.com/yangsongli/luci-theme-atmaterial.git                                        package/luci-theme-atmaterial
 git clone https://github.com/destan19/OpenAppFilter.git                                                  package/oaf
 git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06                                     package/luci-theme-argon
+git clone https://github.com/jerrykuku/node-request.git                                                  package/node-request
+git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git                                        package/luci-app-jd-dailybonus
+git clone https://github.com/tty228/luci-app-serverchan.git                                              package/luci-app-serverchan
+git clone https://github.com/vernesong/OpenClash.git -b master                                           package/luci-app-openclash
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome                          package/adg
 svn co https://github.com/Lienol/openwrt-luci/trunk/applications/luci-app-smartdns                       package/luci-app-smartdns
+svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash                                   package/luci-app-openclash   
