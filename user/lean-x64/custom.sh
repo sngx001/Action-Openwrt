@@ -24,5 +24,6 @@ git clone https://github.com/jerrykuku/node-request.git                         
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git                                        package/luci-app-jd-dailybonus
 git clone https://github.com/tty228/luci-app-serverchan.git                                              package/luci-app-serverchan
 git clone https://github.com/vernesong/OpenClash.git -b master                                           package/luci-app-openclash
+git clone https://github.com/garypang13/luci-app-eqos.git                                                package/luci-app-eqos
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome                          package/adg
 svn co https://github.com/Lienol/openwrt-luci/trunk/applications/luci-app-smartdns                       package/luci-app-smartdns
