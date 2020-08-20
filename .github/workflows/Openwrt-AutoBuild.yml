@@ -146,8 +146,8 @@ jobs:
       run: |
           rm -rf ./Firmware/
           mkdir -p ./Firmware/
-          find openwrt/bin/targets/ -name "*bin*" | xargs -i mv -f {} ./Firmware/
-          find openwrt/bin/targets/ -name "*img*" | xargs -i mv -f {} ./Firmware/
+          find openwrt/bin/targets/ -name "*bin*" | xargs -i cp {} ./Firmware/
+          find openwrt/bin/targets/ -name "*img*" | xargs -i cp -f {} ./Firmware/
 
     
     - name: Upload Packages to release
