@@ -2,6 +2,9 @@
 
 echo "Apply custom.sh"
 
+sed -i 's/DEPENDS.*/& \+luci-i18n-mwan3-zh-cn/g'  package/lean/luci-app-syncdial/Makefile
+sed -i 's/DEPENDS.*/& \+luci-i18n-nlbwmon-zh-cn/g'  package/lean/luci-app-wrtbwmon/Makefile
+
 git clone https://github.com/CCnut/feed-netkeeper.git -b openwrt-18.06                                   package/nk
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git                             package/luci-theme-infinityfreedom
 git clone https://github.com/yangsongli/luci-theme-atmaterial.git                                        package/luci-theme-atmaterial

@@ -5110,7 +5110,7 @@ CONFIG_PACKAGE_luci-app-zerotier=m
 #
 # 4. Themes
 #
-CONFIG_PACKAGE_luci-theme-argon=m
+CONFIG_PACKAGE_luci-theme-argon-jerrykuku=m
 CONFIG_PACKAGE_luci-theme-argon-dark-mod=m
 CONFIG_PACKAGE_luci-theme-argon-light-mod=m
 CONFIG_PACKAGE_luci-theme-atmaterial=m
