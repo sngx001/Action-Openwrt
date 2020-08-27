@@ -585,4 +585,5 @@ CONFIG_PACKAGE_kmod-mt7663-firmware-ap=n
 CONFIG_PACKAGE_kmod-mt7663-firmware-sta=n
 CONFIG_PACKAGE_kmod-mt7663s=n
 CONFIG_PACKAGE_kmod-mt7663u=n
+CONFIG_PACKAGE_kmod-mt7603=n
 
