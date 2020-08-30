@@ -13,7 +13,9 @@ sed -i  " 23i sed -i 's/http:/https:/g' /etc/opkg/distfeeds.conf"  package/lean/
 sed -i  "s/R20\(.[0-9].[0-9]\{1,2\}\)/R20.$version/g" package/lean/default-settings/files/zzz-default-settings
 sed -i 's/DEPENDS.*/& \+luci-i18n-samba-zh-cn/g'  package/lean/autosamba/Makefile
 
+rm -rf feeds/packages/net/smartdns
 rm -rf package/lean/luci-theme-argon
 git clone https://github.com/destan19/OpenAppFilter.git                                                  package/oaf
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome                          package/adg
 svn co https://github.com/Lienol/openwrt-luci/trunk/applications/luci-app-smartdns                       package/luci-app-smartdns
+svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns                                     package/smartdns
