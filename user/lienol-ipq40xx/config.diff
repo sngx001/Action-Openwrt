@@ -3,25 +3,70 @@ CONFIG_HAVE_DOT_CONFIG=y
 CONFIG_ALL_NONSHARED=y
 CONFIG_ALL_KMODS=y
 
-#机型选择
-CONFIG_TARGET_x86=y
-CONFIG_TARGET_x86_64=y
+# 机型选择
+CONFIG_TARGET_ipq40xx=y
+CONFIG_TARGET_ipq40xx_generic=y
+CONFIG_TARGET_MULTI_PROFILE=y
+CONFIG_TARGET_PER_DEVICE_ROOTFS=y
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_8dev_jalapeno=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_8dev_jalapeno=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_alfa-network_ap120c-ac=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_alfa-network_ap120c-ac=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_asus_map-ac2200=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_asus_map-ac2200=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_asus_rt-ac58u=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_asus_rt-ac58u=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_asus_rt-acrh17=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_asus_rt-acrh17=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_avm_fritzbox-4040=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_avm_fritzbox-4040=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_avm_fritzbox-7530=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_avm_fritzbox-7530=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_avm_fritzrepeater-1200=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_avm_fritzrepeater-1200=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_avm_fritzrepeater-3000=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_avm_fritzrepeater-3000=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_canbox_cm520-79f=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_canbox_cm520-79f=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_meraki_mr33=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_meraki_mr33=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_compex_wpj428=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_compex_wpj428=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_engenius_eap1300=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_engenius_eap1300=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_engenius_ens620ext=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_engenius_ens620ext=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_glinet_gl-b1300=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_glinet_gl-b1300=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_linksys_ea6350v3=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_linksys_ea6350v3=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_linksys_ea8300=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_linksys_ea8300=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_netgear_ex6100v2=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_netgear_ex6100v2=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_netgear_ex6150v2=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_netgear_ex6150v2=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_openmesh_a42=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_openmesh_a42=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_openmesh_a62=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_openmesh_a62=""
+# CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_p2w_r619ac is not set
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_p2w_r619ac-128m=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_p2w_r619ac-128m=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_qcom_ap-dk01.1-c1=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_qcom_ap-dk01.1-c1=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_qcom_ap-dk04.1-c1=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_qcom_ap-dk04.1-c1=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_qxwlan_e2600ac-c1=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_qxwlan_e2600ac-c1=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_qxwlan_e2600ac-c2=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_qxwlan_e2600ac-c2=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_zyxel_nbg6617=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_zyxel_nbg6617=""
+CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_zyxel_wre6606=y
+CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_zyxel_wre6606=""
 
-#镜像设置
-CONFIG_TARGET_ROOTFS_EXT4FS=y
-CONFIG_TARGET_ROOTFS_SQUASHFS=y
-CONFIG_GRUB_IMAGES=y
-CONFIG_GRUB_EFI_IMAGES=y
-CONFIG_TARGET_IMAGES_GZIP=y
-CONFIG_VDI_IMAGES=y
-CONFIG_VMDK_IMAGES=y
-
-#设置分区大小
-CONFIG_TARGET_KERNEL_PARTSIZE=16
-CONFIG_TARGET_ROOTFS_PARTSIZE=496
-
-#额外包
-CONFIG_PACKAGE_autocore=y
+# 额外包
 CONFIG_PACKAGE_automount=m
 CONFIG_PACKAGE_autosamba=m
 CONFIG_PACKAGE_fast-classifier-example=m
@@ -32,12 +77,26 @@ CONFIG_PACKAGE_tang=m
 CONFIG_PACKAGE_wireguard-tools=m
 
 # Firmware
+
+CONFIG_PACKAGE_ipq-wifi-alfa-network_ap120c-ac=m
+CONFIG_PACKAGE_ipq-wifi-asus_map-ac2200=m
+CONFIG_PACKAGE_ipq-wifi-asus_rt-acrh17=m
+CONFIG_PACKAGE_ipq-wifi-avm_fritzbox-7530=m
+CONFIG_PACKAGE_ipq-wifi-avm_fritzrepeater-1200=m
+CONFIG_PACKAGE_ipq-wifi-avm_fritzrepeater-3000=m
+CONFIG_PACKAGE_ipq-wifi-canbox_cm520-79f=m
+CONFIG_PACKAGE_ipq-wifi-engenius_eap1300=m
+CONFIG_PACKAGE_ipq-wifi-engenius_ens620ext=m
+CONFIG_PACKAGE_ipq-wifi-linksys_ea6350v3=m
+CONFIG_PACKAGE_ipq-wifi-linksys_ea8300=m
+CONFIG_PACKAGE_ipq-wifi-p2w_r619ac=m
+CONFIG_PACKAGE_ipq-wifi-qxwlan_e2600ac=m
+
 CONFIG_PACKAGE_aircard-pcmcia-firmware=m
-CONFIG_PACKAGE_amd64-microcode=m
 CONFIG_PACKAGE_amdgpu-firmware=m
 CONFIG_PACKAGE_ar3k-firmware=m
 CONFIG_PACKAGE_ath10k-firmware-qca4019=m
-CONFIG_PACKAGE_ath10k-firmware-qca4019-ct=m
+CONFIG_PACKAGE_ath10k-firmware-qca4019-ct=y
 CONFIG_PACKAGE_ath10k-firmware-qca4019-ct-htt=m
 CONFIG_PACKAGE_ath10k-firmware-qca6174=m
 CONFIG_PACKAGE_ath10k-firmware-qca9887=m
@@ -56,11 +115,11 @@ CONFIG_PACKAGE_ath10k-firmware-qca99x0=m
 CONFIG_PACKAGE_ath10k-firmware-qca99x0-ct=m
 CONFIG_PACKAGE_ath10k-firmware-qca99x0-ct-htt=m
 CONFIG_PACKAGE_ath6k-firmware=m
-CONFIG_PACKAGE_ath9k-htc-firmware=y
+CONFIG_PACKAGE_ath9k-htc-firmware=m
 CONFIG_PACKAGE_b43legacy-firmware=m
 CONFIG_B43LEGACY_FW_SQUASH=y
 CONFIG_B43LEGACY_FW_SQUASH_COREREVS="1,2,3,4"
-CONFIG_PACKAGE_bnx2-firmware=y
+CONFIG_PACKAGE_bnx2-firmware=m
 CONFIG_PACKAGE_brcmfmac-firmware-4329-sdio=m
 CONFIG_PACKAGE_brcmfmac-firmware-43362-sdio=m
 CONFIG_PACKAGE_brcmfmac-firmware-43430-sdio=m
@@ -75,7 +134,6 @@ CONFIG_PACKAGE_carl9170-firmware=m
 CONFIG_PACKAGE_e100-firmware=m
 CONFIG_PACKAGE_edgeport-firmware=m
 CONFIG_PACKAGE_ibt-firmware=m
-CONFIG_PACKAGE_intel-microcode=m
 CONFIG_PACKAGE_iwl3945-firmware=m
 CONFIG_PACKAGE_iwl4965-firmware=m
 CONFIG_PACKAGE_iwlwifi-firmware-iwl100=m
@@ -110,11 +168,11 @@ CONFIG_PACKAGE_p54-pci-firmware=m
 CONFIG_PACKAGE_p54-spi-firmware=m
 CONFIG_PACKAGE_p54-usb-firmware=m
 CONFIG_PACKAGE_prism54-firmware=m
-CONFIG_PACKAGE_r8169-firmware=y
+CONFIG_PACKAGE_r8169-firmware=m
 CONFIG_PACKAGE_radeon-firmware=m
 CONFIG_PACKAGE_rs9113-firmware=m
 CONFIG_PACKAGE_rt2800-pci-firmware=m
-CONFIG_PACKAGE_rt2800-usb-firmware=y
+CONFIG_PACKAGE_rt2800-usb-firmware=m
 CONFIG_PACKAGE_rt61-pci-firmware=m
 CONFIG_PACKAGE_rt73-usb-firmware=m
 CONFIG_PACKAGE_rtl8188eu-firmware=m
@@ -301,6 +359,7 @@ CONFIG_PACKAGE_luci-app-xlnetacc=m
 CONFIG_PACKAGE_luci-app-zerotier=m
 
 # 主题
+
 CONFIG_PACKAGE_luci-theme-argon-dark-mod=m
 CONFIG_PACKAGE_luci-theme-argon-jerrykuku=m
 CONFIG_PACKAGE_luci-theme-argon-light-mod=m
@@ -311,10 +370,12 @@ CONFIG_PACKAGE_luci-theme-infinityfreedom=m
 CONFIG_PACKAGE_luci-theme-material=m
 
 # 协议
+
 CONFIG_PACKAGE_luci-proto-3g=m
 CONFIG_PACKAGE_luci-proto-bonding=m
 CONFIG_PACKAGE_luci-proto-ipip=m
 CONFIG_PACKAGE_luci-proto-ipv6=y
+CONFIG_PACKAGE_luci-proto-ncm=m
 CONFIG_PACKAGE_luci-proto-netkeeper=m
 CONFIG_PACKAGE_luci-proto-openconnect=m
 CONFIG_PACKAGE_luci-proto-ppp=y
@@ -324,6 +385,7 @@ CONFIG_PACKAGE_luci-proto-vpnc=m
 CONFIG_PACKAGE_luci-proto-wireguard=m
 
 # 防火墙
+
 CONFIG_PACKAGE_arptables=m
 CONFIG_PACKAGE_conntrack=m
 CONFIG_PACKAGE_conntrackd=m
@@ -333,7 +395,6 @@ CONFIG_PACKAGE_fwknop=m
 CONFIG_PACKAGE_fwknopd=m
 CONFIG_PACKAGE_ip6tables=y
 CONFIG_PACKAGE_ip6tables-extra=m
-CONFIG_PACKAGE_ip6tables-mod-fullconenat=m
 CONFIG_PACKAGE_ip6tables-mod-nat=m
 CONFIG_PACKAGE_ip6tables-nft=m
 CONFIG_PACKAGE_iptables=y
@@ -372,9 +433,11 @@ CONFIG_PACKAGE_iptables-mod-nat-extra=m
 CONFIG_PACKAGE_iptables-mod-nflog=m
 CONFIG_PACKAGE_iptables-mod-nfqueue=m
 CONFIG_PACKAGE_iptables-mod-physdev=m
+CONFIG_PACKAGE_iptables-mod-proto=m
 CONFIG_PACKAGE_iptables-mod-psd=m
 CONFIG_PACKAGE_iptables-mod-quota2=m
 CONFIG_PACKAGE_iptables-mod-rpfilter=m
+CONFIG_PACKAGE_iptables-mod-rtpengine=m
 CONFIG_PACKAGE_iptables-mod-sysrq=m
 CONFIG_PACKAGE_iptables-mod-tarpit=m
 CONFIG_PACKAGE_iptables-mod-tee=m
@@ -387,9 +450,10 @@ CONFIG_PACKAGE_iptaccount=m
 CONFIG_PACKAGE_iptgeoip=m
 CONFIG_PACKAGE_miniupnpc=m
 CONFIG_PACKAGE_miniupnpd=m
+CONFIG_MINIUPNPD_IGDv2=y
 CONFIG_PACKAGE_natpmpc=m
-CONFIG_PACKAGE_nftables=m
-CONFIG_PACKAGE_NFT_WITH_JSON=y
+CONFIG_PACKAGE_nftables-json=m
+CONFIG_PACKAGE_nftables-nojson=m
 CONFIG_PACKAGE_shorewall=m
 CONFIG_PACKAGE_shorewall-core=m
 CONFIG_PACKAGE_shorewall-lite=m
@@ -442,13 +506,15 @@ CONFIG_PACKAGE_usbutils=m
 CONFIG_PACKAGE_upmpdcli=m
 CONFIG_PACKAGE_mpd-full=m
 CONFIG_PACKAGE_mpc=m
+CONFIG_PACKAGE_bash=m
 CONFIG_PACKAGE_xl2tpd=m
 CONFIG_PACKAGE_ppp-mod-pptp=m
-CONFIG_PACKAGE_bash=m
 
-# 必备
+## 必备
 CONFIG_PACKAGE_openssh-sftp-server=y
 CONFIG_PACKAGE_mount-utils=y
 CONFIG_PACKAGE_vim-fuller=y
 CONFIG_PACKAGE_e2fsprogs=y
 CONFIG_PACKAGE_mkf2fs=y
+
+
