@@ -19,3 +19,7 @@ git clone https://github.com/destan19/OpenAppFilter.git                         
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome                          package/adg
 svn co https://github.com/Lienol/openwrt-luci/trunk/applications/luci-app-smartdns                       package/luci-app-smartdns
 svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns                                     package/smartdns
+
+#only mt7621
+rm -rf package/lean/mt
+git clone https://github.com/hyird/mt_wifi.git                                                           package/mt
