@@ -133,6 +133,7 @@ jobs:
       run: |
         cd openwrt/bin/packages/
         tar -cvf  ${{matrix.target}}_packages.tar ./
+        gzip ${{matrix.target}}_packages.tar
         mv *.tar ..
         
     - name:  Pack targets_dir
@@ -140,6 +141,7 @@ jobs:
       run: |
         cd openwrt/bin/targets/
         tar -cvf  ${{matrix.target}}_targets.tar ./
+        gzip ${{matrix.target}}_targets.tar
         mv *.tar ..
         
     - name: Assemble Firmware
