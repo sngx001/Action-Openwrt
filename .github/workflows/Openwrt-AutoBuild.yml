@@ -132,15 +132,14 @@ jobs:
       if: steps.compile.outputs.status == 'success'
       run: |
         cd openwrt/bin/packages/
-        tar -zcvf  ${{matrix.target}}_packages.tar.gz ./
-        ls
+        tar --warning=no-file-changed -zcvf  ${{matrix.target}}_packages.tar.gz ./
         mv *.tar.gz ..
         
     - name:  Pack targets_dir
       if: steps.compile.outputs.status == 'success'
       run: |
         cd openwrt/bin/targets/
-        tar -czvf  ${{matrix.target}}_targets.tar.gz ./
+        tar --warning=no-file-changed -czvf  ${{matrix.target}}_targets.tar.gz ./
         mv *.tar.gz ..
         
     - name: Assemble Firmware
