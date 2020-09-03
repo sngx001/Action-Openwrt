@@ -157,9 +157,9 @@ diff -uNr package/lean/mt/drivers/mt_wifi/Makefile package/lean/11111/drivers/mt
 +	$(INSTALL_DIR) $(1)/etc_ro/Wireless/RT2860AP/
 +	$(INSTALL_DIR) $(1)/lib/preinit/
 +
-+	$(INSTALL_BIN) ./files/dbdc.l1profile.dat $(1)/etc/wireless/l1profile.dat
-+	$(INSTALL_BIN) ./files/mt7615.1.2G.dat $(1)/etc/wireless/mt7615/
-+	$(INSTALL_BIN) ./files/mt7615.1.5G.dat $(1)/etc/wireless/mt7615/
++	$(INSTALL_BIN) ./files/7603_7612-l1profile.dat $(1)/etc/wireless/l1profile.dat
++	$(INSTALL_BIN) ./files/mt7603.dat $(1)/etc/wireless/mt7615/
++	$(INSTALL_BIN) ./files/mt7612.dat $(1)/etc/wireless/mt7615/
 +
 +	$(INSTALL_BIN) ./files/SingleSKU.dat $(1)/etc_ro/Wireless/RT2860AP/
 +	$(INSTALL_BIN) ./files/SingleSKU_BF.dat $(1)/etc_ro/Wireless/RT2860AP/
