@@ -41,7 +41,7 @@
    SERCOMM_SWVER := 0x0052
    IMAGE_SIZE := 40960k
 -  DEVICE_PACKAGES += -kmod-mt7603 -wpad-openssl kmod-mt7603e kmod-mt7615d luci-app-mtwifi
-+  DEVICE_PACKAGES += -kmod-mt7603 -wpad-openssl kmod-mt7603e kmod-mt7615d-dual mt_wifi-mt7603-mt7615 luci-app-mtwifi
++  DEVICE_PACKAGES += -kmod-mt7603 -wpad-openssl kmod-mt7603e kmod-mt7615d-single mt_wifi-mt7603-mt7615 luci-app-mtwifi
  endef
  TARGET_DEVICES += netgear_r6850
  
