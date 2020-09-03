@@ -1603,7 +1603,7 @@ diff -uNr package/lean/mt/drivers/mt7615d/config-dual.in package/lean/11111/driv
 +	select MTK_CHIP_MT7615E
 +
 +	config MTK_SECOND_IF_MT7615E
-+	bool "MT7615E"
++	bool
 +	select MTK_WIFI_MT_MAC
 +	select MTK_CHIP_MT7615E
 +	select MTK_MULTI_INF_SUPPORT
